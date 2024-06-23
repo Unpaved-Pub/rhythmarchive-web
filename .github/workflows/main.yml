@@ -24,7 +24,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.AUTO_ACTIONS }}
         with:
           source-directory: "output"
-          destination-github-username: "hihangeol"
+          destination-github-username: "Hangeol-Chang"
           destination-repository-name: "rhythmarchive-web"
           user-email: ${{ secrets.EMAIL }}
           commit-message: ${{ github.event.head_commit.message }}
