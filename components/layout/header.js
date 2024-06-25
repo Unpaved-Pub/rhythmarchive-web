@@ -1,6 +1,7 @@
 "use client";
 import styled from 'styled-components'
 import Link from '../Common/link';
+import Image from 'next/image';
 
 const StyledHeader = styled.div`
     background : white;
@@ -32,7 +33,13 @@ export default function Header() {
                     }}
                 >
                     <Link href='/'>
-                        TITLE
+                        <div style={{
+                            display : 'flex',
+                            alignItems : 'center',
+                        }} >
+                            <Image src="/logo_short.png" width={40} height={40} />
+                                Rhythm Archive
+                        </div>
                     </Link>
 
                     <div
