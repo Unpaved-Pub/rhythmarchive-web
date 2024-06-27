@@ -1,39 +1,69 @@
+'use client';
 import Image from "next/image";
 import Link from "../../components/Common/link";
-
+import BackgroundImage from "../../components/layout/BackgroundImage";
+import { useState } from "react";
 
 function DownloadButton() {
     return (
-        <button
-            style={{
-                borderRadius : 100,
-                padding : 10,
-            }}
-        >
-            download(google)
-        </button>
-    )
-}
+        <>
+            <button
+                style={{
+                    width : 300,
+                    padding : 10,
+                    
+                    borderRadius : 50,
+                    
+                    backgroundColor : "transparent",
+                    border : '2px solid white',                    
+                }}
+            >
+                <div 
+                    style={{
+                        fontSize : 20,
+                        color : 'white',
+                    }}
+                >
+                    {/* Download App */}
+                    Register Alpha-test
+                </div>
+                <div
+                    style={{
+                        color : 'white',
+                    }}
+                >
+                    google play
+                </div>
+                </button>
+            </>
+        )
+    }
 
 export default function Home() {
+
+    const [padding, SetPadding] = useState(20);
+
     return (
         <main className={'main'}
             style={{
-                // backgroundImage : `url('/wallpaper.png')`
+                // backgroundColor : 'red'     // 일코용 스크린
             }}
         >
-            <Image src="/wallpaper.png"  width={2560} height={900}
-                style={{
-                    position : 'absolute',
-                    zIndex : 0,
+            <BackgroundImage />
+            <div style={{
+                    color : 'white',
+                    padding : padding,
+                    alignItems : 'center',
+                    display : 'flex',
+                    flexDirection : 'column'
                 }}
-            />
-            <div style={{zIndex : 1}}>
+            >
                 hello everyone.
-
+                <br />
+                <br />
+                <br />
                 <DownloadButton />
             </div>
-            aaa
         </main>
     );
 }

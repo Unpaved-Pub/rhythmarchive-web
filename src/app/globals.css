@@ -111,6 +111,9 @@ a {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  padding: 6rem;
+  padding: 0 6rem;
   min-height: 100vh;
+
+  white-space: pre-wrap;
+  color : 'white';
 }

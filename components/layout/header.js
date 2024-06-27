@@ -45,8 +45,8 @@ export default function Header() {
                     <div
                         style={{
                             display: 'flex',
-                            gap : 10,
-                            
+                            gap : 30,
+                            alignItems : 'center'
                         }}
                     >
                         <HeaderButton href="/about">About</HeaderButton>
