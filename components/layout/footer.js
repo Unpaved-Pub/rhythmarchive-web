@@ -16,7 +16,12 @@ const StyledFooter = styled.div`
 export default function Footer() {
     return (
         <StyledFooter>
-            We do not reserve ownership of Blue Archive and the copyrights used therein.
+            <div>
+                We do not reserve ownership of Blue Archive and the copyrights used therein.
+            </div>
+            <div>
+                connect Info
+            </div>
         </StyledFooter>
     )
 }

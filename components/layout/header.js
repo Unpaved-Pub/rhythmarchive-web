@@ -1,6 +1,6 @@
 "use client";
 import styled from 'styled-components'
-import Link from '../Common/link';
+import Link from '../common/link';
 import Image from 'next/image';
 
 const StyledHeader = styled.div`
