@@ -20,13 +20,24 @@ Rhythm Archive (리듬아카이브) 는 '넥슨게임즈'에서 개발한 모바
             <div
                 style={{
                     color : 'white',
-                    padding : 20,
+                    padding : 100,
+                    paddingLeft : '20%',
+                    paddingRight : '20%',
+
+                    fontFamily : 'CoreDream',
                 }}
             >
-                <div style={{fontSize : 30}}>
+                <div style={{fontSize : 40}}>
                     Terms
                 </div>
-                {term}
+                <div
+                    style={{
+                        lineHeight : 2,
+                    }}
+                >
+
+                    {term}
+                </div>
             </div>
         </div>
     )
