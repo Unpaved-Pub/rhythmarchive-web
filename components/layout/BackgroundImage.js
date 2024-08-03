@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function BackgroundImage({src, darken=0.5, height=900}) {
     
-    const [width, setWidth] = useState(window.innerWidth);
+    const [width, setWidth] = useState(1920);
 
     useEffect(() => {
         if (typeof window !== 'undefined') {

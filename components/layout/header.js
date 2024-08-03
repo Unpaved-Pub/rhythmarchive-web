@@ -1,7 +1,7 @@
 "use client";
 import styled from 'styled-components'
-import Link from '../common/link';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const StyledHeader = styled.div`
     background : white;
