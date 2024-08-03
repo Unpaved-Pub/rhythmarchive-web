@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
-import BackgroundImage from "../../components/layout/BackgroundImage";
+import dynamic from "next/dynamic";
+const BackgroundImage = dynamic(() => import('../../components/layout/BackgroundImage'), {ssr: false});
 import { useState } from "react";
 import Info from "../../components/info/info";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
