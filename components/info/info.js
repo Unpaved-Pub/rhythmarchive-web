@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import BackgroundImage from "../layout/BackgroundImage";
 
@@ -31,7 +32,7 @@ const BodyText = function({children}) {
 
 export default function Info() {
     
-    const [width, setWidth] = useState(window.innerWidth);
+    const [width, setWidth] = useState(1920);
 
     useEffect(() => {
         if (typeof window !== 'undefined') {

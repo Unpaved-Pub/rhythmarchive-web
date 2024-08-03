@@ -16,7 +16,7 @@ Rhythm Archive (리듬아카이브) 는 '넥슨게임즈'에서 개발한 모바
 
     return (
         <div className="main">
-            <BackgroundImage />
+            <BackgroundImage src={'/wallpaper.png'} darken={0.6} />
             <div
                 style={{
                     color : 'white',
