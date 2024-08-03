@@ -1,6 +1,7 @@
 "use client";
-import { useEffect, useState } from "react";
-import BackgroundImage from "../layout/BackgroundImage";
+import { useEffect, useState } from "react"
+import dynamic from "next/dynamic";
+const BackgroundImage = dynamic(() => import('../../components/layout/BackgroundImage'), {ssr: false});
 
 const TitleText = function({children}) {
     return (
@@ -62,7 +63,7 @@ export default function Info() {
                         padding : 50,
                         color : 'white',
                         textAlign : 'left',
-                        width : window.innerWidth,
+                        width : width,
 
                         display : 'flex',
                         flexDirection : 'column',

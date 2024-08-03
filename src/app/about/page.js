@@ -1,4 +1,6 @@
-import BackgroundImage from "../../../components/layout/BackgroundImage";
+"use client";
+import dynamic from "next/dynamic";
+const BackgroundImage = dynamic(() => import('../../../components/layout/BackgroundImage'), {ssr: false});
 
 export default function About() {
     return (
