@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-export default function BackgroundImage({src, darken=0.5, height=900}) {
+export default function BackgroundImage({src, darken=0.5, height=900, style={}}) {
     
     const [width, setWidth] = useState(1920);
 
@@ -24,8 +24,9 @@ export default function BackgroundImage({src, darken=0.5, height=900}) {
 
     return (
         <div style={{
-            position : 'absolute',    
+            position : 'absolute',
             left : "0%",
+            ...style,
         }}>
             <Image src={src}  width={width} height={height}
                 style={{
